@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "proxy": "http://localhost:8080",
   "description": "This is the backend for Bloodline.",
-  "main": "index.js",
+  "main": "backend/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/index.js"
   },
   "author": "Ekansh Lohiya",
   "license": "ISC",

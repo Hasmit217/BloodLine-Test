@@ -51,10 +51,7 @@ app.use("/j",ShowDonorsRoute);
 app.use("/k",ShowBloodAvailRoute);
 
 
-let port = process.env.PORT;
-if(port == null || port == ""){
-  port = 8080;
-}
+const port = process.env.PORT || 8080;
 app.listen(port, function() {
     console.log("Server started sucessfully");
   });

@@ -49,6 +49,12 @@ app.use("/h",RegisterBanksRoute);
 app.use("/i",RegisterDonorsRoute);
 app.use("/j",ShowDonorsRoute);
 app.use("/k",ShowBloodAvailRoute);
-app.listen(8080, function() {
-    console.log("Server started on port 8080");
+
+
+let port = process.env.PORT;
+if(port == null || port == ""){
+  port = 8080;
+}
+app.listen(port, function() {
+    console.log("Server started sucessfully");
   });

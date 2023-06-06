@@ -3,7 +3,7 @@ const BloodBank = require("../models/bloodBanks");
 const router = require("express").Router();
 
 console.log("opened");
-router.get("/showBBdir", function (req, res) {
+router.post("/showBBdir", function (req, res) {
     // res.send("hello");
     // console.log(req.body);
 

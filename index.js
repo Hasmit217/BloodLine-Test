@@ -50,8 +50,12 @@ app.use("/i",RegisterDonorsRoute);
 app.use("/j",ShowDonorsRoute);
 app.use("/k",ShowBloodAvailRoute);
 
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "frontend", "public", "index.html"));
+});
 
 const port = process.env.PORT || 8080;
 app.listen(port, function() {
     console.log("Server started sucessfully");
   });
+

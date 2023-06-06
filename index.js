@@ -52,7 +52,7 @@ app.use("/j",ShowDonorsRoute);
 app.use("/k",ShowBloodAvailRoute);
 
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "frontend", "src", "index.js"));
+  res.sendFile(path.resolve(__dirname, "frontend", "public", "index.html"));
 });
 
 const port = process.env.PORT || 8080;

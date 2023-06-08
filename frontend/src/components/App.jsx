@@ -9,8 +9,6 @@ import BloodBankDir from "./bloodBank/BloodBankDir";
 import AboutUs from "./dashboard/AboutUs";
 import DonorDashboard from "./donor/DonorDashboard";
 import DonorHome from "./donor/DonorHome";
-import Slider from "./layout/Slider";
-import { sliderItems } from "./bloodCamp/option";
 import RegisterCamp from "./bloodCamp/RegisterCamp";
 import { Auth0Provider } from "@auth0/auth0-react";
 import UserLogin from "./donor/DonorLogin";

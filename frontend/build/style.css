@@ -1,0 +1,931 @@
+body {
+  font-family: 'Gentium Plus', serif;
+  background-color: #fff8f9;
+}
+
+.HomeCarddiv {
+  text-align: center;
+  animation: fadein 1.2s;
+}
+
+
+/* .column {
+    float: left;
+    width: 12%;
+    padding: 5px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+
+    border: 1px solid black;
+    margin-right: 20px;
+  }
+  
+  /* Clear floats after image containers */
+/*  
+  .row{
+    width: 100%;
+    content: "";
+    clear: both;
+    display: table;
+    margin-left: 100px;
+  } */
+
+/* .dyk_img{
+    width: 300px;
+    height: 200px;
+  } */
+.dyk_img,
+.benefits_img {
+  display: block;
+  /* width: 95%; */
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: solid 2px red;
+  /* border-radius: 4px; */
+}
+
+.row {
+  display: flex;
+  /* equal height of the children */
+  flex-wrap: wrap;
+  margin-top: 150px;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 90px;
+  animation: fadein 1.2s;
+}
+
+
+.column {
+  flex: 1;
+  /* additionally, equal width */
+
+  padding: 2em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  /* border: solid; */
+  border-radius: 10px;
+  /* text-align: center; */
+  background-color: #f40428;
+  /* box-shadow: rgba(13, 13, 13, 0.35) 3px 7px 15px; */
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+  /* box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; */
+  /* box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px; */
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: 'Proza Libre', sans-serif;
+  /* font-family: 'Gentium Plus', serif; */
+}
+
+.HomeInfodiv {
+  text-align: center;
+  animation: fadein 1.2s;
+}
+
+/* Footer Css ****************************************/
+
+ul {
+  text-align: left;
+  /* color: aliceblue; */
+}
+
+footer {
+  /* position: fixed; */
+  background-color: rgb(36, 35, 35);
+  color: white;
+  bottom: 0;
+  width: 100vw;
+  font-size: 16px;
+  margin-left: -10px;
+}
+
+footer a {
+  color: #8b8989;
+}
+
+footer a:hover {
+  color: #ede7e7;
+}
+
+footer * {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* Navbar Css*********************************** */
+a {
+  cursor: pointer;
+  color: rgb(49, 48, 48);
+  text-decoration: none;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out 0.2s;
+}
+
+a:hover {
+  color: #4f4d4d;
+  transform: translateY(0.5px);
+  transition: all 0.1s ease-in-out 0.1s;
+}
+
+li,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  background-color: #fceded;
+  border: none;
+  margin: 0px;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  margin-left: -10px;
+  /* border-bottom: 2px solid rgb(249, 120, 120); */
+  box-shadow: rgba(247, 226, 226, 0.4) 0px 2px 4px, rgba(226, 180, 180, 0.3) 0px 7px 13px -3px, rgba(190, 147, 147, 0.2) 0px -3px 0px inset;
+
+}
+
+.logo-img {
+  margin-right: 35px;
+  border-radius: 30%;
+  max-width: 80px;
+}
+
+.navbar-func-container {
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 25px;
+}
+
+.navbar-func {
+  /* border:1px solid; */
+  margin: 10px;
+  padding: 10px;
+
+  /* text-align: justify; */
+}
+
+.navbar-func a {
+  display: block;
+  height: 100%;
+  width: 100%
+}
+
+.navbar-func a:hover {
+  /* background-color: #b9b5b5; */
+  /* max-width:100%; */
+  font-size: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #fceded;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 20px;
+  display: block;
+}
+
+.navbar-func:hover .dropdown-content {
+  display: block;
+}
+
+/* ************************************************************************************ */
+/* CampSchecdule css******************************************************************* */
+
+.camp-container {
+  box-sizing: border-box;
+  animation: fadein 1.2s;
+  /* width: 100%; */
+  /* height: 20px; */
+  /* margin-bottom: 50px; */
+}
+
+.below-nav-img {
+  height: 300px;
+  width: 100vw;
+  background-position: center;
+  margin-top: 97px;
+  /* background-size: cover; */
+}
+
+.camp-drop-menu {
+  position: absolute;
+  transform: translateY(4px);
+  width: 20%;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 4px;
+  overflow: auto;
+  max-height: 150px;
+  background-color: #eae8e8;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* animation: slideDown 300ms ease-in-out ; */
+}
+
+/* @keyframes slideDown {
+  0% { 
+    opacity: 0;
+    transform: translateY(-60px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+} */
+.camp-drop-item {
+  padding: 5px;
+  border-bottom: 1px solid rgb(227, 222, 222);
+  cursor: pointer;
+}
+
+.camp-drop-item:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.search-container {
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px solid bisque;
+  padding: 25px;
+  margin: auto;
+  margin-bottom: 100px;
+  width: 75%;
+  /* background-color: #fceded; */
+}
+
+.camp-drop-input {
+  border: 2px solid rgb(233, 230, 230);
+  border-radius: 4px;
+  height: 25px;
+  background-color: #e6e6e6;
+  width: 80%;
+}
+
+/* label{
+  border: 2px solid black;
+} */
+.camp-search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+  border-top: 1px solid black;
+  padding: 10px;
+}
+
+.camp-subFields {
+  /* margin: 5px; */
+  width: 20%
+}
+
+.camp-subFields input {
+  background-color: #fff8f9;
+  width: 100%;
+  /* border: 3px solid black; */
+}
+
+.camp-drop-select-value {
+  /* height: 150px; */
+  max-height: 100px;
+}
+
+/* .search-container button{
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.camp-submit {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.camp-submit button {
+  background: rgb(255, 0, 0);
+  border-radius: 5px;
+  width: 20%;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* ****************************************************************************************/
+/* Blood Request Form css*************************************************************** */
+.br-container {
+  /* display: flex; */
+  box-sizing: border-box;
+  margin: 32px;
+  margin-top: 10%;
+  animation: fadein 1.2s;
+}
+
+.br-heading h1 {
+  color: #b11717;
+}
+
+/* .br-container h1{
+  border-bottom: #c50724;
+}  */
+/* .br-sub-container.h2{
+  border-bottom: 2px solid red;
+} */
+.br-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1px solid #d2cfcf;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  color: #4d4c4c;
+}
+
+.br-sub-container {
+  margin: 20px;
+  padding: 20px;
+  justify-content: first baseline;
+  /* border-left: 1px dotted #b5b5b5; */
+  border-right: 1px dotted #b5b5b5;
+  width: 19%;
+
+}
+
+.br-sub-container-field {
+  display: block;
+  justify-content: top;
+  margin: 10px;
+}
+
+.required-field::after {
+  content: "*";
+  color: red;
+}
+
+.br-form-submit {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  background-color: rgb(254, 251, 251);
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  /* margin: auto; */
+}
+
+select {
+  background-color: rgb(254, 251, 251);
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 2px;
+  /* max-width: 100px; */
+  width: 100%;
+  height: 30px;
+}
+
+textarea {
+  background-color: rgb(254, 251, 251);
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 2px;
+  width: 100%;
+  height: 60px;
+}
+
+button {
+  width: 20%;
+  height: 40px;
+  border-radius: 10px;
+  border: 3px solid rgb(255, 255, 255);
+  background-color: rgb(230 29 29);
+  font-size: 18px;
+  color: #eae8e8;
+  transition: 0.5s;
+}
+
+button:hover {
+  color: white;
+  background-color: #2a2222;
+}
+
+option {
+  background-color: #fceded;
+}
+
+/* ====================== donor dashboard */
+
+.DonorDashboard {
+  margin-top: 150px;
+  animation: fadein 1.2s;
+}
+
+.DonorDashboardUl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 210px;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-left: 20px;
+  margin-top: 50px;
+  padding-right: 15px;
+  border-right: 2px dashed #bbbbbb;
+  /* height: 400px; */
+}
+
+.DonorDashboardLi {
+  display: fixed;
+  display: block;
+  border: 1px solid;
+  border-color: #bbbbbb;
+  border-radius: 5px;
+  height: 40px;
+  padding-top: 20px;
+  margin-bottom: 16px;
+  background-color: #eeeded;
+  width: 200px;
+}
+
+.DonorDashboardLi a {
+  color: rgb(69, 69, 69);
+}
+
+.DonorProfileImg {
+  /* margin-top: 150px; */
+  height: 120px;
+  width: 120px;
+  margin-left: 110px;
+  /* margin-bottom: 50px; */
+  border-radius: 80px;
+}
+
+.topdiv {
+  display: flex;
+  /* margin-top: 10px; */
+  height: 170px;
+  /* margin: auto; */
+  margin-top: -44px;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: #eeeded;
+}
+
+.DonorHeadDiv {
+  margin-left: 540px;
+  margin-top: 40px;
+  /* text-align: center; */
+}
+
+.DonorProfileImgDiv {
+  margin-top: 25px;
+  margin-left: 230px;
+}
+
+.DonorHomeDiv {
+  margin-left: 190px;
+  /* margin-bottom: -50px; */
+  margin-top: 30px;
+  animation: fadein 1.2s;
+}
+
+.DonorHomeh2 {
+  text-align: left;
+  margin-bottom: 30px;
+  /* text-shadow: 2px 2px #f7c4c4; */
+  color: #ff3e5b;
+  border: 1px solid #f2bebe;
+  border-radius: 4px;
+  height: 60px;
+  width: 620px;
+  padding-top: 23px;
+  padding-left: 15px;
+  background-color: rgb(255, 224, 224);
+}
+
+.DonorMainDiv {
+  display: flex;
+}
+
+.ProfileDiv {
+  margin-top: 150px;
+}
+
+/* ====================================================== */
+
+/* Slider CSS**************************************** */
+/* .slider-container {
+  position: relative;
+  height: 450px;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  border: 2px solid red;
+  margin-top: 112px;
+  object-fit: cover;
+  height: 450px;
+}
+
+.slide {
+  flex: 1 0 100%;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  height: 450px;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev,
+.next {
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+img{
+  width:100%;
+  height: 100%;
+} */
+
+/* About Us CSS**************************************** */
+
+.about-container {
+  margin: auto;
+  margin-top: 120px;
+  animation: fadein 1.2s;
+}
+
+/* Register Camp CSS ***********************************/
+
+.rc-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1px solid #d2cfcf;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  color: #4d4c4c;
+}
+
+/* Table CSS ******************************************/
+
+.bloodBankTable {
+  margin: 50px;
+}
+
+.tableContainer {
+  margin: auto;
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid rgb(230 230 230);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation: fadein 1.2s;
+
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  /* width: 100%; */
+  /* border: 1px solid red; */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+tr {
+  background-color: #f5e9e9;
+  word-wrap: break-word;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  border: 1px solid #000000;
+  background-color: #db1313;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  word-wrap: break-word
+}
+
+/* container **************************/
+.container {
+  margin: auto;
+  margin-top: 110px;
+  animation: fadein 1.2s;
+}
+
+/* User Login CSS******************* */
+
+.User-login-container {
+  margin: auto;
+  display: flex;
+  margin: 160px;
+  /* width: 100%; */
+  /* margin-right: 50px; */
+  flex-direction: column;
+  /* margin-top: 110px; */
+  border: 1px solid #ffd4d4;
+  align-items: center;
+  background-color: #ffefef;
+  height: 335px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.login-form {
+  margin: 15px;
+  padding: 30px;
+  width: 50%;
+  border: 1px solid #e4e2e2;
+  background-color: #fffafa;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.loginForm-input {
+  margin: 10px;
+  width: 50%;
+}
+
+/* PopUp CSS ***************************/
+
+.popUp-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Blood bank Login CSS************** */
+.bldBankLogin-container {
+  margin: auto;
+  margin-top: 110px;
+  margin-right: -8px;
+  display: flex;
+  animation: fadein 1.2s;
+}
+
+.bldCell-img {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-left: -8px;
+  margin-top: -9px;
+  flex-basis: 60%;
+}
+
+.bldCell-img img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+.bldBankLogin {
+  box-sizing: border-box;
+  margin: auto;
+  background-color: #F15A59;
+  flex-basis: 40%;
+  height: 507px;
+  margin-top: -5px;
+  flex-grow: 1;
+  padding: 83px;
+}
+
+.bblwhite-container {
+
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.bblwhite-container button {
+  margin: 10px;
+  width: 54%;
+  height: 46px;
+}
+
+.bbl-form {
+  padding: 10px;
+}
+
+/* RegisterBloodBank CSS************* */
+
+.regBldBankContainer {
+  margin-top: 120px;
+}
+
+/* BLoodBankDashBoard CSS************************* */
+
+.bldDash-container {
+  margin-top: 120px;
+}
+
+.logOut-container {
+  padding: 20px;
+  margin-top: 20px;
+  /* margin: auto; */
+  display: flex;
+  width: 100%;
+}
+
+.logOut-container button {
+  margin: 48px;
+  width: 100%;
+}
+
+.bankTopDiv {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 190px;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: #eeeded;
+  margin-top: -99px;
+}
+
+.DonorHeadDiv {
+  padding: 20px;
+  margin-top: -22px;
+  margin-left: 114px
+}
+
+/* News CSS******************************************* */
+.mainNewscontainer{
+  animation: fadein 1.2s;
+}
+.newsContainer {
+  height: 300px;
+  overflow-y: scroll;
+  background-color: #fbefef;
+  border: 1px solid #ffdfdf;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  margin-top: 35px;
+  margin-bottom: 50px;
+  margin-right: 70px;
+  margin-left: 70px;
+}
+
+.newsSection {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  line-height: 1.5;
+  color: #3e3d3d;
+}
+
+.newsSection:last-child {
+  border-bottom: none;
+}
+
+.newsSection:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.newsSection:active {
+  background-color: #f1cfcf;
+}
+
+.newsSection:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.newsHead {
+  margin: auto;
+}
+
+/* Volunteer Donor CSS */
+.vd-container {
+  display: flex;
+  box-sizing: border-box;
+  margin: 32px;
+  margin-top: 10%;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  justify-content: center;
+  animation: fadein 1.2s;
+}
+
+.vd-heading {}
+
+.vd-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1px solid #d2cfcf;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 41%;
+  color: #4d4c4c;
+  margin-left: 405px;
+}
+
+.vd-sub-container {
+  margin: 20px;
+  padding: 20px;
+  justify-content: first baseline;
+  /* border-left: 1px dotted #b5b5b5; */
+  /* border-right: 1px dotted #b5b5b5; */
+  width: 100%;
+  align-self: center; 
+}
+
+.vd-sub-container-field {
+  display: block;
+  justify-content: top;
+  margin: 10px;
+}
+
+.vd-form-submit{
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}

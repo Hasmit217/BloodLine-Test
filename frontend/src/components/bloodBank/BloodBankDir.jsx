@@ -27,7 +27,7 @@ function BloodBankDir() {
         e.preventDefault();
 
         console.log(user);
-        axios.post('http://localhost:8080/f/showCities', user)
+        axios.post('/f/showCities', user)
             .then(response => {
                 setCity(response.data);
                 console.log(response.data);
@@ -57,9 +57,9 @@ function BloodBankDir() {
         }
 
     }
-
+    // http://localhost:8080
     const handleSearchClick = () => {
-        axios.post('http://localhost:8080/e/showBBdir', user)
+        axios.post('/e/showBBdir', user)
             .then(response => {
                 setBldBankDir(response.data);
                 if (response.data.length === 0) {

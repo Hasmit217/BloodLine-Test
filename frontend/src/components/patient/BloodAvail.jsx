@@ -34,7 +34,7 @@ function BloodAvail() {
 
     const handleSearchClick = () => {
         console.log("hello");
-        axios.post('http://localhost:8080/k/showBloodAvail', user)
+        axios.post('/k/showBloodAvail', user)
             .then(response => {
                 setBloodAvail(response.data);
                 if (response.data.length === 0) {

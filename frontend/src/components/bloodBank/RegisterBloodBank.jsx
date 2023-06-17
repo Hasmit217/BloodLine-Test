@@ -56,7 +56,7 @@ function RegisterBloodBank() {
         var isEmpty = isAnyFieldEmpty();
 
         if (!isEmpty) {
-            axios.post('http://localhost:8080/h/registerBank', user)
+            axios.post('/h/registerBank', user)
                 .then(response => {
                     console.log(response.data);
                 })

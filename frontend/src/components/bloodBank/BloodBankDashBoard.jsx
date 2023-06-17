@@ -9,7 +9,7 @@ const LogoutButton = () => {
 
     useEffect(() => {
         if (isAuthenticated && user && !bankRegistered) {
-            axios.post('http://localhost:8080/h/registerBank', { userid: user.name })
+            axios.post('/h/registerBank', { userid: user.name })
                 .then(response => {
                     console.log(response.data);
                     setBankRegistered(true);

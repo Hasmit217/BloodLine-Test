@@ -74,7 +74,7 @@ function RequestBlood() {
         var isEmpty = isAnyFieldEmpty();
 
         if (!isEmpty) {
-            axios.post('http://localhost:8080/a/bloodReq', user)
+            axios.post('/a/bloodReq', user)
                 .then(response => {
                     console.log(response.data);
                 })

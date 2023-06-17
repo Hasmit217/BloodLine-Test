@@ -52,7 +52,7 @@ function RegisterCamp() {
         var isEmpty = isAnyFieldEmpty();
 
         if (!isEmpty) {
-            axios.post('http://localhost:8080/d/registerCamp', user)
+            axios.post('/d/registerCamp', user)
                 .then(response => {
                     console.log(response.data);
                 })

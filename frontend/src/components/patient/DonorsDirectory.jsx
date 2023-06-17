@@ -37,7 +37,7 @@ function DonorsDir(){
 
     const handleSearchClick = () => {
         console.log("hello");
-        axios.post('http://localhost:8080/j/showDonors', user)
+        axios.post('/j/showDonors', user)
             .then(response => {
                 setDonorDir(response.data);
                 if (response.data.length === 0) {

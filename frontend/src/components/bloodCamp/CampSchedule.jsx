@@ -35,7 +35,7 @@ function CampSchedule() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(user)
-        axios.post('http://localhost:8080/g/showCamps', user)
+        axios.post('/g/showCamps', user)
             .then(response => {
                 setCampData(response.data);
                 if (response.data.length === 0) {

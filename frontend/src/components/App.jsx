@@ -34,7 +34,8 @@ function App() {
             domain="dev-su2ro5wbkodq3ijt.us.auth0.com"
             clientId="K7fyBMA0EFY2Gaio7ZbxVCoMkwFvZrWo"
             authorizationParams={{
-                redirect_uri: "http://localhost:3000/bloodBankDash"
+                // redirect_uri: "http://localhost:3000/bloodBankDash"
+                redirect_uri: "/bloodBankDash"
                 
             }}>
             <div>
@@ -72,7 +73,4 @@ function App() {
 
 export default App;
 
-//2 20  20
-//2 50  49
-//3 15  72
 

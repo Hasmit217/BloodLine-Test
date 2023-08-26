@@ -57,9 +57,10 @@ function BloodBankDir() {
         }
 
     }
+
     // http://localhost:8080
     const handleSearchClick = () => {
-        axios.post('/e/showBBdir', user)
+        axios.post('/e/showBBdir', user) // sends asynchronus HTTP request
             .then(response => {
                 setBldBankDir(response.data);
                 if (response.data.length === 0) {
@@ -75,7 +76,6 @@ function BloodBankDir() {
             .catch(error => {
                 console.error(error);
             });
-
     }
 
     return (
@@ -86,11 +86,10 @@ function BloodBankDir() {
                 <form action="" className="camp-search-form">
                     <div className="camp-subFields">
                         <label htmlFor="state">State<span class="required-field"></span></label>
-                        {/* <br></br> */}
                         <select name="state" value={user.state} onChange={(e) => {
                             handleInput(e);
-                            setShowFilter(true);
-                            setShowCity()
+                            // setShowFilter(true);
+                            // setShowCity()
                         }} required>
                             <option value="" selected disabled>Select State</option>
                             {options.map((item) => {
@@ -105,8 +104,8 @@ function BloodBankDir() {
                         {/* <br></br> */}
                         <select name="district" value={user.district} onChange={(e) => {
                             handleInput(e);
-                            setShowFilter(true);
-                            setShowCity()
+                            // setShowFilter(true);
+                            // setShowCity()
                         }}>
                             <option value="" selected disabled>Select District</option>
                             {options.map((item) => {

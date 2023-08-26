@@ -45,7 +45,7 @@ function RegVolunteerDonor() {
         var isEmpty = isAnyFieldEmpty();
 
         if (!isEmpty) {
-            axios.post('http://localhost:8080/i/registerDonor', user)
+            axios.post('/i/registerDonor', user)
                 .then(response => {
                     console.log(response.data);
                 })

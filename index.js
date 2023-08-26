@@ -47,13 +47,6 @@ connectDB().then(() => {
     console.log("Server started sucessfully");
   });
 })
-// mongoose.connect("mongodb+srv://ekanshlohiya98:Bloodline%40she98@cluster0.9k4kzet.mongodb.net/bloodlineDB",{
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true
-// });
-// "mongodb+srv://cluster0.9k4kzet.mongodb.net/bloodlineDB"
-
-// BloodBank.updateMany({registered:'false'});
 
 app.use("/a", BloodReqRoute);
 app.use("/b", BloodBankRoute);
